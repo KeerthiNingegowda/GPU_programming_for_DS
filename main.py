@@ -1,11 +1,6 @@
-import torch
-
-print(torch.cuda.is_available())
-
-print(torch.cuda.device_count())
-
-if torch.cuda.is_available():
-    print(f"GPU name {torch.cuda.get_device_name(0)}")
-    print(f"Current device: {torch.cuda.current_device()}")
+def main():
+    print("Hello from gpu-programming-for-ds!")
 
 
+if __name__ == "__main__":
+    main()

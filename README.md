@@ -11,4 +11,11 @@ You need to be extremely familiar with anatomy of a GPU at both compute and memo
 Make use of my notes as a staring point here:- https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/main/GPU_CUDA_Basics%20-%20Google%20Docs.pdf
 
 ## Setting up EC2 instance and port forwarding to VS Code 
+Check out this https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/main/basic_housekeeping_stuff/AWS_EC2_Instance_Launch%20-%20Google%20Docs.pdf
 
+## Cupy exploration
+https://github.com/KeerthiNingegowda/GPU_programming_for_DS/tree/main/cupy_exploration 
+
+## Numba exploration
+CPU kernels
+GPU kernels

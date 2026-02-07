@@ -1,21 +1,13 @@
-# GPU_programming_for_DS
+# GPU Kernel Programming for Data Scientists
+
+This repository consists of exploration that helps understand how to write GPU kernels using Cupy, Numba and Triton. It also consists of writing CPU kernels using Numba's JIT compiler. Along with writing of GPU kernels, the repo also consists information on how to profile performance using Nvidia's Nsight Compute along with inspecting the corresponsing assembly language for fun 😊.  All on an AWS EC2 instance given everything is managed for you.
+
+<b>Note:-</b> This exploration is applicable for optimization on a single GPU as opposed to GPU cluster.
+
+Medium article can be found here:- TBD
+
+## Starting point 🚨
+You need to be extremely familiar with anatomy of a GPU at both compute and memory level and understand what are the bottlenecks of the same. If you are unfamiliar or not willing to put the effort then this entire excercise will <b>NOT</b> be a productive use of your time.
+Make use of my notes as a staring point here:- https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/main/GPU_CUDA_Basics%20-%20Google%20Docs.pdf
 
 
-Fundamentals about the hardware i.e. GPU is important to understand before going ahead with programming kernels or even just using pytorch wrappers to efficiently utilize GPU 
-
-Key concepts:-
-Kernels, threads, warps, blocks, grids
-Memory hierarchies in a GPU - Registers, Shared memory, L1 cache, L2 cache, Global Memory(VRAM), Host(CPU) memory
-Learn about Warp divergence, memory coalesce, kernel fusion - These are not fancy words but fundamentals.
-
-It is also important to know when not to use GPUs'. They are very elegant in data processing(including model training) based on the assumption that the data can be accessed in blocks of contiguous memory blocks and that the computation is embarrassingly parallel  i.e. the results of one wont depend on the other. So when this pattern is broken, GPUs struggle. Instances where you trying to solve some graph problem or accessing a data structure like linked list where you cannot access is "not direct" is when GPUs struggle.
-
-Understand key questions like
-1) Can different threads on the same block execute different kernels?
-2) How does the CPU-GPU memory transfer happen? What are some caveats of the same?
-    a) What is Unified memory architecture between CPU and GPU
-3) What are tensors and how are they different from matrices? Do tensors always have to be matrices?
-4) What is the difference between a tensor core and a cuda core
-
-
-In any scenario, when using GPU you will either be bounded my compute (how many instructions can I crunch) or by memory (data in GPU memory, time spent in data transfers between GPU and CPU etc,.)

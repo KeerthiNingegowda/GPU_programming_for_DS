@@ -10,4 +10,5 @@ Medium article can be found here:- TBD
 You need to be extremely familiar with anatomy of a GPU at both compute and memory level and understand what are the bottlenecks of the same. If you are unfamiliar or not willing to put the effort then this entire excercise will <b>NOT</b> be a productive use of your time.
 Make use of my notes as a staring point here:- https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/main/GPU_CUDA_Basics%20-%20Google%20Docs.pdf
 
+## Setting up EC2 instance and port forwarding to VS Code 
 

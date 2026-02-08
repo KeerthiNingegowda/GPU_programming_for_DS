@@ -17,5 +17,13 @@ Check out this https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/
 https://github.com/KeerthiNingegowda/GPU_programming_for_DS/tree/main/cupy_exploration 
 
 ## Numba exploration
-CPU kernels
+CPU optimization - This matters especially when working in python due to
+<ul>
+<li>Python is an interpreter and is inherently slow. With Numba's njit you can achieve near C/C++ type speeds </li>
+<li> If you data is not GPU worthy but still need some optimization this path may be your better bet</li>
+<li>Not everyone has GPU access to begin with </li>
+</ul>
+
+
+Refer to ./Numba_exploration/njit_and_jit_exploration_CPU.ipynb.
 GPU kernels

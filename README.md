@@ -31,3 +31,16 @@ Refer to [./Numba_exploration/njit_and_jit_exploration_CPU.ipynb.](https://githu
 
 
 GPU kernels
+
+
+
+
+## Other basic commands
+Running Nsight Compute profiling reprort
+```
+ncu python <kernel-file-name.py>
+```
+If you have multiple kernels in one file
+```
+ncu --kernel-name <kernel_name> python <file-name.py>
+```

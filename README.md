@@ -43,3 +43,7 @@ If you have multiple kernels in one file
 ```
 ncu --kernel-name <kernel_name> python <file-name.py>
 ```
+When working with Triton you may likely see errors related to python development headers - Something like #include <Python.h> not found. Install it
+```
+sudo yum install python3-devel  # This varies based on your OS
+```

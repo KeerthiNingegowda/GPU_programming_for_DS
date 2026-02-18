@@ -56,6 +56,8 @@ compute-sanitizer --tool memcheck python <filename.py>
 
 Other tools you can use initcheck and racecheck (I couldnt trigger race check. But it may work for you)
 
+Some of the evidence of related to debugging Triton kernels can be found <a href="./Triton/Debugging_Triton_kernels/debug_evidence/"> here </a>
+
 
 ## Other basic commands
 Running Nsight Compute profiling report

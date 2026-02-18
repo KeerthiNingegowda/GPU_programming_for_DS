@@ -34,8 +34,31 @@ Refer to notebooks <a href = "https://github.com/KeerthiNingegowda/GPU_programmi
 Check out PTX analysis <a href = "https://github.com/KeerthiNingegowda/GPU_programming_for_DS/blob/main/Numba_exploration/PTX_FMA_Numba.pdf"> here </a>
 
 
+## Triton exploration
+Kernels can be found <a href="./Triton/triton_custom_kernels.ipynb"> here </a> and <a href="./Triton/Triton_custom_kernels_2D.ipynb"> here(This is for 2D tensors) </a>
+
+Additionally, debugging example scripts can be found <a href="./Triton/Debugging_Triton_kernels/"> here </a>
+
+1) Easiest mode - Triton Intepreter mode
+
+```
+export TRITON_INTERPRET=1
+```
+
+Set the above env variable to inspect for any logical issues with your kernels
+
+2) Use compute-sanitizer from nvidia to check any memory access related issues
+
+Command to run memcheck (Is memory address valid?)
+```
+compute-sanitizer --tool memcheck python <filename.py>
+```
+
+Other tools you can use initcheck and racecheck (I couldnt trigger race check. But it may work for you)
+
+
 ## Other basic commands
-Running Nsight Compute profiling reprort
+Running Nsight Compute profiling report
 ```
 ncu python <kernel-file-name.py>
 ```

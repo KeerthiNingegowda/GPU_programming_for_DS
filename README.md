@@ -4,7 +4,7 @@ This repository consists of exploration that helps understand how to write GPU k
 
 <b>Note:-</b> This exploration is applicable for optimization on a single GPU as opposed to GPU cluster.
 
-Medium article can be found here:- TBD
+Medium article can be found here:- https://medium.com/@keerthi.ningegowda/in-a-parallel-universe-memory-is-scarce-a-peek-into-gpu-kernel-programming-and-debugging-29b27be20afc
 
 ## Starting point 🚨
 You need to be extremely familiar with anatomy of a GPU at both compute and memory level and understand what are the bottlenecks of the same. If you are unfamiliar or not willing to put the effort then this entire excercise will <b>NOT</b> be a productive use of your time.
